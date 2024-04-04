@@ -1,0 +1,10 @@
+// less不支持通配符, 借助插件实现，less.render(lessString, { plugins: [require('less-plugin-glob')] })
+@import '_defines/*';
+@import '_first/*';
+
+
+// hexo-renderer-less中对theme.config没有做空判定
+
+@import '_style/_base/*.less';
+@import '_style/_layout/*.less';
+@import '_highlight/*.less';

@@ -1,0 +1,22 @@
+{
+  "name": "vento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "patch-package"
+  },
+  "keywords": [],
+  "author": "jasonhuang",
+  "license": "ISC",
+  "dependencies": {
+    "hexo": "^7.1.1",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-less": "*",
+    "hexo-util": "^3.3.0",
+    "less-plugin-glob": "^3.0.0",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0"
+  }
+}

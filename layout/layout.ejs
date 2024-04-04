@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="<%- config.language %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <%- css('css/style') %>
+</head>
+<body>
+  <div class="app">
+    <div class="layout sticky-header">
+      <%- partial('_partial/header', null, {cache: false, path: path}) %>
+      <div class="container clearfix">
+        <%- body %>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

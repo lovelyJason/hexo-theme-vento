@@ -1,0 +1,6 @@
+version: 0.0.1
+less:
+  options:
+    globalVars:
+      primary-color: 'red'
+    plugins: ['less-plugin-glob']

@@ -1,0 +1,58 @@
+.article-container {
+  .project-header {
+    padding: 20vh 0 4rem
+  }
+
+  .project-title {
+    font-size: 4rem;
+    margin: 0 0 4rem;
+    padding: 0
+  }
+
+  .project-info {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .8rem
+  }
+
+  .project-info>div {
+    margin-right: 4rem
+  }
+
+  .project-info>div:last-of-type {
+    margin: 0
+  }
+
+  .category:after {
+    content: ", "
+  }
+
+  .category:last-of-type:after {
+    content: ""
+  }
+
+  .label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  .categories {
+    font-size: .8rem;
+    color: #000;
+    .tag {
+      list-style: none;
+      display: inline-block;
+      margin-right: 2px;
+      .category {
+      }
+    }
+  }
+
+}
+
+.main {
+  // width: calc(100% - 100px);
+  width: 100%;
+  padding-right: 16px;
+  float: left;
+}

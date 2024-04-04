@@ -1,0 +1,25 @@
+diff --git a/node_modules/hexo-renderer-less/lib/renderer.js b/node_modules/hexo-renderer-less/lib/renderer.js
+index f7ca8ca..30c8b82 100644
+--- a/node_modules/hexo-renderer-less/lib/renderer.js
++++ b/node_modules/hexo-renderer-less/lib/renderer.js
+@@ -18,11 +18,19 @@ async function lessFn(data) {
+   const routeList = route.list();
+   const tmpPaths = typeof pathsCfg === 'string' ? [pathsCfg] : pathsCfg;
+ 
++  options.plugins = options.plugins.map(item => {
++    if (typeof item === 'string') {
++      return require(item)
++    } else {
++      return item
++    }
++  })
++  // console.log(options)
++
+   const paths = tmpPaths.filter(path => !micromatch.scan(path).isGlob)
+     .map(path => join(cwd, path)); // assuming paths are relative from the root of the project;
+   const match = micromatch(routeList, config.paths).map(path => join(cwd, dirname(path)));
+   paths.push(...match, dirname(data.path));
+-
+   const result = await less.render(data.text, {
+     paths,
+     filename: basename(data.path),

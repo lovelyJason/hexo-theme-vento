@@ -1,0 +1,18 @@
+<% if (pagination === 2){ %>
+  <div class="projects">
+    <% page.posts.each(function(post){ %>
+      <%- partial('post-item', {post: post, index: true}) %>
+    <% }) %>
+  </div>
+<% } else { %>
+
+<% } %>
+<% if (page.total > 1){ %>
+  <nav id="page-nav">
+    <% var prev_text = "&laquo; " + __('prev');var next_text = __('next') + " &raquo;"%>
+    <%- paginator({
+      prev_text: prev_text,
+      next_text: next_text
+    }) %>
+  </nav>
+<% } %>
