@@ -9,7 +9,7 @@
 
 1. 下载源码包
 ```bash
-cd blog # cd 到你的博客目录
+cd blog/themes # cd 到你的博客目录下的themes文件夹
 git clone https://github.com/lovelyJason/hexo-them-vento
 yarn
 ```
