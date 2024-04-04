@@ -2,6 +2,9 @@
 
 这是一个hexo主题博客，主打一个简洁，后续可能会和服务端同构相结合，例如nuxt
 
+<img width="1200" alt="image" src="https://github.com/lovelyJason/hexo-theme-vento/assets/50656459/19786afc-6824-4b1f-9aa7-af6a630ce4d0">
+
+
 ## 安装
 
 1. 下载源码包
